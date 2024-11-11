@@ -1,0 +1,85 @@
+
+.app-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+a, a:visited {
+    color: var(--p-color-text-link);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .app-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.app-title h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.app-title p {
+    font-size: 13px;
+    color: #555;
+    margin: 0 0 20px 0;
+}
+
+.app-card {
+    position: relative;
+    display: block;
+    gap: 10px;
+    background-color: #fff;
+    box-shadow: 0rem 0.125rem 0.25rem rgba(31, 33, 36, 0.1), 0rem 0.0625rem 0.375rem rgba(31, 33, 36, 0.05);
+    border-radius: 10px;
+    padding: 25px 20px 20px 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.app-card:hover {
+    box-shadow: 0rem 0.125rem 0.25rem rgba(31, 33, 36, 0.2), 0rem 0.0625rem 0.375rem rgba(31, 33, 36, 0.1);
+}
+
+.app-card h5 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 0;
+    color: #111;
+}
+
+.app-card p {
+    margin: 0;
+    color: #111;
+}
+
+.app-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app-card li {
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+.app-card button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0 0 5px 0;
+    color: var(--p-color-text-link);
+    cursor: pointer;
+}
+
+.app-card li:last-child a, .app-card li:last-child button {
+    padding: 0;
+}

@@ -1,0 +1,18 @@
+.app-vitals {
+    position: fixed;
+    left: calc(50% - 250px);
+    bottom: 5px;
+    width: 500px;
+    background-color: #111;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.app-vitals>span { text-align: center; }
+
+.app-vitals * { color: #fff;}

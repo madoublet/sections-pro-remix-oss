@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="437" height="437" rx="20"></rect>
+        <filter x="-6.9%" y="-6.9%" width="113.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Before-and-After" transform="translate(-271, -110)">
+            <g id="icon" transform="translate(271, 110)">
+                <rect id="Rectangle" x="0" y="0" width="500" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <circle id="Oval" fill="#3B8B96" cx="250" cy="247" r="125"></circle>
+                <path d="M264.024346,243.468147 L230.52451,209.89852 C228.576792,207.946743 228.576792,204.78659 230.52451,202.834814 L235.801745,197.546584 C237.752334,195.591932 240.918157,195.588638 242.872809,197.539226 C242.875265,197.541676 242.877717,197.544129 242.880167,197.546584 L288.706259,243.468147 C290.653978,245.419923 290.653978,248.580077 288.706259,250.531853 L242.880167,296.453416 C240.929579,298.408068 237.763756,298.411362 235.809103,296.460774 C235.806648,296.458324 235.804195,296.455871 235.801745,296.453416 L230.52451,291.165186 C228.576792,289.21341 228.576792,286.053257 230.52451,284.10148 L264.024346,250.531853 C265.972065,248.580077 265.972065,245.419923 264.024346,243.468147 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

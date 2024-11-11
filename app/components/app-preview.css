@@ -1,0 +1,17 @@
+.app-preview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color: #fff;
+    box-shadow: 0rem .125rem .25rem rgba(31, 33, 36, .1), 0rem .0625rem .375rem rgba(31, 33, 36, .05);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.app-preview iframe {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - 135px);
+}

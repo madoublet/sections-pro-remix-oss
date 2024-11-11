@@ -1,0 +1,37 @@
+{% if image or video %}
+  <div class="sp-ssb-slide" data-index="{{ index }}">
+    <div class="sp-ssb-content">
+      {% if video %}
+        <div class="sp-video-container">
+          {{
+            video
+            | video_tag: image_size: '500x', autoplay: false, loop: true, controls: false, muted: block.settings.muted
+          }}
+        </div>
+      {% else %}
+        {% if image %}
+          <img
+            loading="lazy"
+            src="{{ image | image_url: width: 600 }}"
+            srcset="
+              {{ image| image_url: width: 600 }} 600w,
+              {{ image | image_url: width: 800 }} 800w,
+              {{ image | image_url: width: 1000 }} 1000w,
+              {{ image | image_url: width: 1100 }} 1100w
+            "
+          >
+        {% else %}
+          <img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect x='2' y='2' width='496' height='496' fill='%23D8D8D8' stroke='%23D8D8D8' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E">
+        {% endif %}
+      {% endif %}
+    </div>
+
+    {% if caption != '' %}
+    <div class="sp-ssb-slide-text">
+      <p>
+        {{ caption }}
+      </p>
+    </div>
+  {% endif %}
+  </div>
+{% endif %}

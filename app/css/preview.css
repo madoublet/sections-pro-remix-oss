@@ -1,0 +1,10 @@
+.app-preview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 0 25px 0;
+}
+
+.app-preview-description {
+    margin-bottom: 20px;
+}

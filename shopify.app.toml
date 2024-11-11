@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "abc123"
+name = "Sections Pro Remix OSS"
+handle = "sections-pro-remix-oss"
+application_url = "https://sampledevapp.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "sampledevstore.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_files,read_product_listings,read_products,read_themes,write_content,write_files,write_products,write_themes"
+
+[auth]
+redirect_urls = [
+  "https://sampledevapp.app/auth/callback",
+  "https://sampledevapp.app/auth/shopify/callback",
+  "https://sampledevapp.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false

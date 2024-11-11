@@ -1,0 +1,43 @@
+{% comment %}
+  © Sections Pro. You are free to use this section in your store. You may not redistribute this section in another Shopify app.
+{% endcomment %}
+<style>
+
+</style>
+
+<div id="sp-{{ section.id }}" class="sp-section" sp-section>
+  
+<div class="sp-container" sp-container>
+
+  <div class="sp-grid">
+
+    <h1>{{ section.settings.text }}</h1>
+
+  </div>
+  <!-- /.sp-grid -->
+  
+</div>
+<!-- /.sp-container -->
+
+</div>
+<!-- /.sp-section -->
+
+{% schema %}
+  {
+    "name": "{{ name }}",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "This is a sample section"
+      }
+    ],
+	"blocks": [],
+	"presets": [
+      {
+        "name": "{{ name }}",
+      }
+    ]
+  }
+{% endschema %}

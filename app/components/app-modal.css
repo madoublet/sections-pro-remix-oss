@@ -1,0 +1,20 @@
+.app-modal-content {
+    padding: 20px;
+}
+
+.app-modal-content p {
+    margin-bottom: 20px;
+}
+
+.app-image-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    cursor: pointer;
+}
+
+.app-image-button>img {
+    border-radius: 4px;
+    cursor: pointer;
+}

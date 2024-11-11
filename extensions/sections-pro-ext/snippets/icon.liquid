@@ -1,0 +1,31 @@
+{% if image or video %}
+    <div class="sp-icb-col">
+      <div class="sp-icb-content">
+        <div class="sp-icb-icon">
+          {% if video %}
+            {{
+              video
+              | video_tag: image_size: '500x', autoplay: true, loop: true, controls: false, muted: true
+            }}
+          {% elsif image %}
+            <img
+              loading="lazy"
+              src="{{ image | image_url: width: image_size }}">
+          {% endif %}
+        </div>
+        <!-- /sp-icb-icon -->
+      </div>
+      <!-- /sp-icb-content -->
+
+      {% if caption != '' %}
+        <div class="sp-icb-text">
+          <p>
+            {{ caption }}
+          </p>
+        </div>
+        <!-- /sp-icb-text -->
+      {% endif %}
+    </div>
+    <!-- /sp-icb-column -->
+
+  {% endif %}
